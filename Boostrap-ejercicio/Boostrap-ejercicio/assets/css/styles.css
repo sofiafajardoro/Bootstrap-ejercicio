@@ -1,0 +1,78 @@
+@media (max-width: 576px) {
+  /* tablet chico */
+}
+@media (max-width: 992px) {
+  /* desktop */
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+    padding: 20px;
+    text-align: center;
+    background: #f1f1f1;
+}
+
+/* GRID PRINCIPAL (una columna en móvil) */
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+/* Tarjetas con FLEXBOX */
+.tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card {
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #ddd;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}
+
+/* ------------------------------ */
+/* TABLET (≥ 768px) */
+/* ------------------------------ */
+@media (min-width: 768px) {
+    .tarjetas {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
+
+/* ------------------------------ */
+/* DESKTOP (≥ 1024px) */
+/* ------------------------------ */
+@media (min-width: 1024px) {
+
+    /* Grid con sidebar a la derecha */
+    .layout-grid {
+        grid-template-columns: 3fr 1fr;
+    }
+}
